@@ -1,0 +1,84 @@
+@startuml
+
+!define ABSTRACT_CLASS abstract
+!define INTERFACE_CLASS abstract interface
+
+package "Доменный слой" {
+
+    package "Абстракции и Интерфейсы" {
+        class AbstractInterfaceFactory <<ABSTRACT_CLASS>> {
+            + get_interface(interface_data: dict): BaseInterface
+        }
+
+        class BaseInterface <<ABSTRACT_CLASS>> {
+        }
+
+        class BaseBridge <<ABSTRACT_CLASS>> {
+        }
+
+    }
+
+    package "Реализации Абстракций" {
+        class InterfaceFactory {
+            + get_interface(interface_data: dict): BaseInterface
+        }
+
+        package "bridges" {
+            class NetplanInterface {
+                + create(data: dict): None
+                + delete(interface_name: str): None
+                + get_bridges_list(): list
+            }
+        }
+    }
+
+    package "Библиотека Управления Netplan" {
+
+        package "bridges.utils" {
+
+            class NetplanManager {
+                + _execute_command(command: str): subprocess.CompletedProcess
+                + write_yaml_file(netplan_config: dict): None
+                + apply(): None
+                + create_configuration(data: dict): None
+                + delete_configuration(interface_name: str): None
+                - _prepare_interfaces_data_for_yaml_config(data: dict): dict
+                - _get_netplan_config_file_data(): dict
+                - _check_if_bridge_name_is_vacant(bridge_name: str, netplan_config: dict): None
+                - _add_network_bridge(netplan_config: dict, data: dict): None
+                - _create_yaml_config_file(data: dict): dict
+                - _ensure_bridge_exists(interface_name: str, netplan_config: dict): None
+                - _get_bridges_interfaces(netplan_config: dict): list
+                - _del_bridges_if_empty(netplan_config: dict): None
+                - _clear_ethernets(netplan_config: dict): None
+                - _del_ethernets_if_empty(netplan_config: dict): None
+                - _delete_bridge_from_config(bridge_name: str, netplan_config: dict): None
+                - _update_renderer(new_renderer: str, netplan_config: dict): None
+            }
+
+            class NetworkIPManager {
+                + get_main_port_name(): str
+                + set_interface_address(interface_name: str, ip_address: str): str
+                + remove_interface_address(interface_name: str, ip_address: str): str
+                + turn_on_interface(interface_name: str): str
+                + turn_off_interface(interface_name: str): str
+                + check_interface_state(interface_name: str, expected_states: set = ("UP", "DOWN")): bool
+                + get_interface_addresses(interface_name: str): List[str]
+                + get_port_ip_address(port_name: str): str
+                + flush_ip_from_interface(interface: str):str
+                + run_dhclient(interface_name: str): str
+                + get_default_gateway_ip(interface_ip: str): str
+                + set_default_gateway(gateway_ip: str, interface_name: str): str
+                + get_bridges_list(): list
+            }
+        }
+    }
+
+    InterfaceFactory --|> AbstractInterfaceFactory
+    NetplanInterface --|> BaseInterface
+    NetplanInterface --|> BaseBridge
+    NetplanInterface --|> NetplanManager
+    NetworkIPManager --|> NetplanManager
+}
+
+@enduml

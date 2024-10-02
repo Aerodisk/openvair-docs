@@ -1,0 +1,81 @@
+@startuml
+
+!define ABSTRACT_CLASS abstract
+!define INTERFACE_CLASS abstract interface
+
+package "Доменный слой" {
+
+    package "Абстракции и Интерфейсы" {
+        class AbstractInterfaceFactory <<ABSTRACT_CLASS>> {
+            + get_interface(interface_data: dict): BaseInterface
+        }
+
+        class BaseInterface <<ABSTRACT_CLASS>> {
+        }
+
+        class BaseBridge <<ABSTRACT_CLASS>> {
+        }
+
+    }
+
+    package "Реализации Абстракций" {
+        class InterfaceFactory {
+            + get_interface(interface_data: dict): BaseInterface
+        }
+
+        package "bridges" {
+            class OVSInterface {
+                + create(data: dict): None
+                + delete(): None
+                + get_bridges_list(): list
+            }
+        }
+    }
+
+    package "Библиотека Управления OVS" {
+
+        package "bridges.utils" {
+
+            class OVSManager {
+                + _execute_command(command: str): subprocess.CompletedProcess
+                + create_bridge(bridge_name: str): str
+                + create_configuration(self, data: dict): None
+                + delete_configuration(self, interface_name: str): None
+                + edit_interface_address(self, interface_name: str, old_ip_address: str, new_ip_address: str): str
+                + get_bridges_list(self): list
+                + delete_bridge(bridge_name: str): str
+                + add_interface(bridge_name: str, interface_name: str, tag: int = None): str
+                + remove_interface(bridge_name: str, interface_name: str): str
+                + edit_interface(interface_name: str, options: str): str
+                + check_bridge_existence(bridge_name: str): bool
+                + check_interface_existence(bridge_name: str, interface_name: str): bool
+                + add_ports(interface_name: str, ports_list: list): None
+                - _configure_main_port(self, interface_name: str, main_port_name: str): None
+            }
+
+            class NetworkIPManager {
+                + get_main_port_name(self): str
+                + set_interface_address(interface_name: str, ip_address: str): str
+                + remove_interface_address(interface_name: str, ip_address: str): str
+                + turn_on_interface(interface_name: str): str
+                + turn_off_interface(interface_name: str): str
+                + check_interface_state(interface_name: str, expected_states: set = ("UP", "DOWN")): bool
+                + get_interface_addresses(interface_name: str): List[str]
+                + get_port_ip_address(port_name: str): str
+                + flush_ip_from_interface(interface_name: str):str
+                + run_dhclient(interface_name: str): str
+                + get_default_gateway_ip(interface_ip: str): str
+                + set_default_gateway(gateway_ip: str, interface_name: str): str
+                + get_bridges_list(): list
+            }
+        }
+    }
+
+    InterfaceFactory --|> AbstractInterfaceFactory
+    OVSInterface --|> BaseInterface
+    OVSInterface --|> BaseBridge
+    OVSInterface --|> OVSManager
+    NetworkIPManager --|> OVSManager
+}
+
+@enduml
