@@ -7,10 +7,15 @@ Open vAIR DOCS
 
 1. Скачайте репозиторий проекта:
 ```bash
-git clone https://github.com/Aerodisk/Open-vAIR-docs.git
+git clone https://github.com/Aerodisk/openvair-docs.git
 ```
 
-2. Запустите установку:
+2. Перейдите в папку проекта документации:
 ```bash
-./Open-vAIR-docs/install.sh
+cd openvair-docs
+```
+
+3. Запустите скрипт установки:
+```bash
+./openvair-docs/install.sh
 ```
