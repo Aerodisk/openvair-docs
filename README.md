@@ -17,5 +17,5 @@ cd openvair-docs
 
 3. Запустите скрипт установки:
 ```bash
-./openvair-docs/install.sh
+./install.sh
 ```
