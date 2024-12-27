@@ -8,3 +8,5 @@
    introduction
    preparing
    api_usage
+   tips
+   conclusion
