@@ -8,17 +8,18 @@
 
    .. code-block:: toml
 
-      [backup]
-      type = "restic"
-      repository = "s3:http://example.com/backups"
-      password_file = "/path/to/password/file"
+    [backup]
+        backuper = 'restic'
+        [backup.restic]
+        repository = '/srv/restic_repo'
+        password = 'your_password'
 
    Параметры, которые нужно настроить:
    - ``repository`` — URL вашего репозитория для хранения данных.
-   - ``password_file`` — путь к файлу с паролем для шифрования данных.
+   - ``password_file`` — пароль, который будет использоваться для доступа к репозиторию
 
 2. Перезапустите системные сервисы, чтобы применить настройки:
+
    .. code-block:: bash
 
-      sudo systemctl restart backup-domain.service
-      sudo systemctl restart backup-service-layer.service
+    sudo systemctl restart backup-service-layer.service backup-domain.service 
