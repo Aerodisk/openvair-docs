@@ -13,12 +13,3 @@ Welcome to Open vAIR's documentation!
    contributors_guide/index
    project_structure/index
    user_guide/index
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`

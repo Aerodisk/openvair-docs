@@ -1,23 +1,24 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="ru" >
+<html class="writer-html5" lang="ru">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Установка &mdash; документация aistov 1</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <title>Установка &mdash; документация openvair 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/underscore.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
-        <script src="../_static/translations.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=2e4cb06f"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+        <script src="../_static/translations.js?v=29b1f277"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
     <link rel="search" title="Поиск" href="../search.html" />
@@ -30,11 +31,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> aistov
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            openvair
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Поиск в документации" />
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -69,14 +74,14 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">aistov</a>
+          <a href="../index.html">openvair</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Навигация по страницам">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a></li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Установка и Удаление</a></li>
       <li class="breadcrumb-item active">Установка</li>
       <li class="wy-breadcrumbs-aside">
@@ -105,7 +110,7 @@
 </section>
 <section id="id3">
 <h2>Этапы установки<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
-<p>Ниже представлена пошаговая инструкция для установки aistov.</p>
+<p>Ниже представлена пошаговая инструкция для установки Open vAIR.</p>
 <section id="id4">
 <h3>Обновление Системных Пакетов<a class="headerlink" href="#id4" title="Permalink to this heading"></a></h3>
 <ol class="arabic simple">
@@ -158,7 +163,7 @@
 <ol class="arabic simple" start="2">
 <li><p>Скачать репозиторий.</p></li>
 </ol>
-<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>http://git.aerodisk.local/vair/aistov.git
+<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Aerodisk/Open-vAIR
 </pre></div>
 </div>
 </section>
@@ -166,8 +171,14 @@
 <h3>Запуск Скрипта Установки<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
 <p>1. Запустить скрипт установки из скачанного репозитория с помощью встроенной
 команды source.</p>
-<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>./aistov/install.sh
+<div class="highlight-Shell notranslate"><div class="highlight"><pre><span></span>./openvair/install.sh
 </pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Во время установки все логи будут записываться в файл <cite>/openvair/install.log</cite>.
+Рекомендуется проверять этот файл для отслеживания хода установки и диагностики
+возможных ошибок.</p>
 </div>
 </section>
 </section>
