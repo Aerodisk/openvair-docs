@@ -44,6 +44,7 @@
    - **Пример ответа:**
 
      .. code-block:: json
+
         {
             "status": "success",
             "data": {
