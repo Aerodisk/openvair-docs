@@ -79,7 +79,7 @@
 
 .. code-block:: Shell
 
-    git clone http://git.aerodisk.local/vair/openvair.git
+    git clone https://github.com/Aerodisk/Open-vAIR
 
 Запуск Скрипта Установки
 ------------------------
@@ -90,3 +90,9 @@
 .. code-block:: Shell
 
     ./openvair/install.sh
+
+.. note::
+
+    Во время установки все логи будут записываться в файл `/openvair/install.log`.
+    Рекомендуется проверять этот файл для отслеживания хода установки и диагностики
+    возможных ошибок.

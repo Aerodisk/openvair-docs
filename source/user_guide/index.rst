@@ -21,3 +21,4 @@
    dashboard/index
    nested_virtualization/index
    update/index
+   backup/index
