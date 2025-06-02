@@ -22,3 +22,4 @@
    nested_virtualization/index
    update/index
    backup/index
+   template/index
