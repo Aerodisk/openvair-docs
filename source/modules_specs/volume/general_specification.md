@@ -165,4 +165,4 @@ API → Service Layer → Domain Layer → Infrastructure (ORM, Storage)
 ## Тестирование
 
 - Все API покрыты интеграционными тестами
-- См. [`volume/tests/README.md`](./tests/README.md)
+- [Спецификация тестов модуля volume](./tests_specification.md)
