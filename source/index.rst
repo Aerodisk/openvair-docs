@@ -7,9 +7,9 @@ Welcome to Open vAIR's documentation!
 ==========================================
 
 .. toctree::
-   :maxdepth: 2
 
    install/index
    contributors_guide/index
    project_structure/index
    user_guide/index
+   modules_specs/index
