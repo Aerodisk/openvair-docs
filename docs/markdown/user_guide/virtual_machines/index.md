@@ -1,0 +1,18 @@
+# Виртуальные машины
+
+* [Введение](introduction.md)
+* [Модуль Virtual Machines](virtual_machines.md)
+  * [API](virtual_machines.md#api)
+  * [**Получение списка виртуальных машин**](virtual_machines.md#id1)
+  * [**Получение информации о виртуальной машине**](virtual_machines.md#id2)
+  * [**Создание виртуальной машины**](virtual_machines.md#id3)
+  * [**Удаление виртуальной машины**](virtual_machines.md#id4)
+  * [**Запуск виртуальной машины**](virtual_machines.md#id5)
+  * [**Остановка виртуальной машины**](virtual_machines.md#id6)
+  * [**Редактирование виртуальной машины**](virtual_machines.md#id7)
+* [Сценарии использования](usercases.md)
+  * [Создание виртуальной машины](usercases.md#id2)
+  * [Удаление виртуальной машины](usercases.md#id3)
+  * [Запуск виртуальной машины](usercases.md#id4)
+  * [Выключение виртуальной машины](usercases.md#id5)
+  * [Редактирование ВМ](usercases.md#id6)

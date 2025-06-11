@@ -1,0 +1,17 @@
+# Хранилища
+
+* [Введение](introduction.md)
+* [NFS Хранилища](nfs/index.md)
+  * [Введение](nfs/introduction.md)
+  * [Создание Хранилищ На Удаленной Файловой Системе NFS](nfs/creating.md)
+* [Локальные Хранилища](localfs/index.md)
+  * [Введение](localfs/introduction.md)
+  * [Получение Информации о физических дисках](localfs/getting_local_disks.md)
+  * [Создание партиций на локальных дисках](localfs/partitions.md)
+  * [Создание Хранилищ На Локальных Дисках](localfs/creating.md)
+* [Получение информации о хранилищах](getting.md)
+  * [Все хранилища](getting.md#id2)
+  * [Одно хранилище](getting.md#id3)
+* [Удаление Хранилища](deleting.md)
+  * [Удаление](deleting.md#id2)
+  * [Влияние статуса удаляемого хранилища на процесс](deleting.md#id3)
