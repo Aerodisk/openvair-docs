@@ -29,11 +29,11 @@ nav:
     - Введение: user_guide/introduction.md
     - Хранилища: user_guide/storages.md
     - Виртуальные диски: user_guide/volume.md
+    - Образы: user_guide/image.md
     - Network: user_guide/network/index.md
     - Sentry: user_guide/sentry/index.md
     - Виртуальные сети: user_guide/virtual_networks/index.md
     - Блочные устройства: user_guide/block_devices/index.md
-    - Образы: user_guide/image/index.md
     - Event Store: event_store/index.md
     - Уведомления: notification/index.md
     - Управление пользователями: user/index.md
