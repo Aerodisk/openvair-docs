@@ -25,12 +25,7 @@ nav:
       - project_structure/general_module/module_dir.md
   - Инструкция для пользователя:
     - Введение: user_guide/introduction.md
-    - Хранилища:
-      - Введение: user_guide/storages/introduction.md)
-      - NFS Хранилища: user_guide/storages/nfs/index.md)
-      - Локальные Хранилища: user_guide/storages/localfs/index.md
-      - Получение информации о хранилищах: user_guide/storages/getting.md
-      - Удаление Хранилища: user_guide/storages/deleting.md
+    - Хранилища: user_guide/storages.md
     - Network: user_guide/network/index.md
     - Sentry: user_guide/sentry/index.md
     - Виртуальные сети: user_guide/virtual_networks/index.md
