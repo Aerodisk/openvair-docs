@@ -2,6 +2,8 @@ site_name: Документация Open vAIR
 dev_addr: 192.168.122.50:8001
 markdown_extensions:
   - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 nav:
   - Введение:
     - Про Open vAIR: introduce/index.md
@@ -26,6 +28,7 @@ nav:
   - Инструкция для пользователя:
     - Введение: user_guide/introduction.md
     - Хранилища: user_guide/storages.md
+    - Виртуальные диски: user_guide/volume.md
     - Network: user_guide/network/index.md
     - Sentry: user_guide/sentry/index.md
     - Виртуальные сети: user_guide/virtual_networks/index.md
@@ -35,7 +38,6 @@ nav:
     - Уведомления: notification/index.md
     - Управление пользователями: user/index.md
     - SNMP: user_guide/SNMP/index.md
-    - Виртуальные диски: user_guide/volume/index.md
     - Виртуальные машины: user_guide/virtual_machines/index.md
     - Dashboard: user_guide/dashboard/index.md
     - Вложенная виртуализация: user_guide/nested_virtualization/index.md
