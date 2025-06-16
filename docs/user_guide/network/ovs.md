@@ -83,4 +83,4 @@
 
 ### Диаграмма UML
 
-![image](_static/img/network/ovs.png)
+![image](/assets/images/network/ovs.png)

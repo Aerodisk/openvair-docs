@@ -75,4 +75,4 @@
 
 ### Диаграмма UML
 
-![image](_static/img/network/netplan.png)
+![image](/assets/images/network/netplan.png)

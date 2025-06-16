@@ -4,14 +4,14 @@
 
 > 1. Для просмотра информации о системе перейдите во вкладку «Системная панель»
 
-> ![image](_static/img/dashboard/0_dashboard.png)
+> ![image](/assets/images/dashboard/0_dashboard.png)
 
 ## Настройка панели
 
 > 1. Для настройки панели нажми на кнопку «Настройка панели»:
 
-> ![image](_static/img/dashboard/1_config_button.png)
+> ![image](/assets/images/dashboard/1_config_button.png)
 > 1. В открывшемся меню можно настроить отображение виджетов, а так же выбрать
 >    нужные настройки сетки:
 
-> ![image](_static/img/dashboard/2_config.png)
+> ![image](/assets/images/dashboard/2_config.png)
