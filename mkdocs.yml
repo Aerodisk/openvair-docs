@@ -1,11 +1,42 @@
 site_name: Документация Open vAIR
 dev_addr: 192.168.122.50:8001
+
 markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
+
 plugins:
   - glightbox
+
+theme:
+  name: material
+  features:
+    - header.autohide
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Переключить на тёмную тему
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/white-balance-sunny
+        name: Переключить на светлую тему
+
 nav:
   - Введение:
     - Про Open vAIR: introduce/index.md
@@ -35,12 +66,12 @@ nav:
     - Network: user_guide/network.md
     - Виртуальные сети: user_guide/virtual_networks.md
     - Виртуальные машины: user_guide/virtual_machines.md
+    - Управление пользователями: user_guide/user.md
 
     - Sentry: user_guide/sentry/index.md
     - Блочные устройства: user_guide/block_devices/index.md
     - Event Store: event_store/index.md
     - Уведомления: notification/index.md
-    - Управление пользователями: user/index.md
     - SNMP: user_guide/SNMP/index.md
     - Dashboard: user_guide/dashboard/index.md
     - Вложенная виртуализация: user_guide/nested_virtualization/index.md
@@ -54,23 +85,3 @@ nav:
 #      - Введение: install/introduction.md
 #      - Системные требования: install/system_requirements.md
 
-theme:
-  name: material
-  features:
-    - header.autohide
-    - navigation.tabs
-    - navigation.instant
-    - navigation.instant.progress
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Переключить на тёмную тему
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/white-balance-sunny
-        name: Переключить на светлую тему
