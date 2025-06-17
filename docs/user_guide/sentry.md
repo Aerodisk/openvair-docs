@@ -18,9 +18,9 @@ Sentry - это платформа для управления ошибками 
 2. Заполните форму регистрации заполнив все поля
    ![image](../_assets/images/sentry/get_started2.png)
 3. После успешной регистрации аккаунта переходите на страницу авторизации
-    ![image](../_assets/images/sentry/sign_in.png)
+   ![image](../_assets/images/sentry/sign_in.png)
 4. Введите свой логин и пароль
-![image](../_assets/images/sentry/password.png)
+   ![image](../_assets/images/sentry/password.png)
 
 ### Создание проекта Sentry
 
@@ -37,12 +37,12 @@ Sentry - это платформа для управления ошибками 
 4. Откройте файл prject_config.toml в корне проекта и вставьте
    скопированную строку в качестве значения переменной dsn
    ![image](../_assets/images/sentry/project_config_sentry.png)
-6. Перезапустите приложение 
+6. Перезапустите приложение
    ```
    sudo systemctl restart web-app.service
    ```
 7. Перейдите на вкладку Issues в боковом меню для просмотра событий
-![image](../_assets/images/sentry/issues_page.png)
+   ![image](../_assets/images/sentry/issues_page.png)
 
 Пример отловленой ошибки
 ![image](../_assets/images/sentry/issues_error.png)
