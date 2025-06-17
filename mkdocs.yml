@@ -70,10 +70,10 @@ nav:
     - Управление пользователями: user_guide/user.md
     - Dashboard: user_guide/dashboard.md
     - Event Store: user_guide/event_store.md
+    - SNMP: user_guide/SNMP.md
 
     - Sentry: user_guide/sentry/index.md
     - Уведомления: notification/index.md
-    - SNMP: user_guide/SNMP/index.md
     - Вложенная виртуализация: user_guide/nested_virtualization/index.md
     - Патчирование/Обновление проекта: user_guide/update/index.md
     - Резервное копирование: user_guide/backup/index.md
