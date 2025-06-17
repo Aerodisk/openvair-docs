@@ -69,9 +69,9 @@ nav:
     - Виртуальные машины: user_guide/virtual_machines.md
     - Управление пользователями: user_guide/user.md
     - Dashboard: user_guide/dashboard.md
+    - Event Store: user_guide/event_store.md
 
     - Sentry: user_guide/sentry/index.md
-    - Event Store: event_store/index.md
     - Уведомления: notification/index.md
     - SNMP: user_guide/SNMP/index.md
     - Вложенная виртуализация: user_guide/nested_virtualization/index.md
