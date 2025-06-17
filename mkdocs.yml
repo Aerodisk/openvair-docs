@@ -1,6 +1,51 @@
 site_name: Документация Open vAIR
 dev_addr: 192.168.122.50:8001
 
+nav:
+  - Введение:
+      - Про Open vAIR: introduce/index.md
+      - Установка и удаление: introduce/install.md
+      - Патчирование/Обновление проекта: introduce/update.md
+
+  - Контрибьюторам:
+      - Общий подход: contributors/general.md
+      - Тестирование: contributors/tests.md
+
+  - Спецификация модулей:
+      - Введение: modules_specs/index.md
+      - volume:
+          - Описание модуля: modules_specs/volume/general_specification.md
+          - Тесты: modules_specs/volume/tests_specification.md
+
+  - Структура проекта:
+      - project_structure/general_terms.md
+      - Общая Структура Модуля:
+          - project_structure/general_module/introduction.md
+          - project_structure/general_module/adapters.md
+          - project_structure/general_module/domain.md
+          - project_structure/general_module/entrypoints.md
+          - project_structure/general_module/service_layer.md
+          - project_structure/general_module/module_dir.md
+
+  - Инструкция для пользователя:
+      - Введение: user_guide/introduction.md
+      - Хранилища: user_guide/storages.md
+      - Виртуальные диски: user_guide/volume.md
+      - Образы: user_guide/image.md
+      - Блочные устройства: user_guide/block_devices.md
+      - Network: user_guide/network.md
+      - Виртуальные сети: user_guide/virtual_networks.md
+      - Виртуальные машины: user_guide/virtual_machines.md
+      - Управление пользователями: user_guide/user.md
+      - Dashboard: user_guide/dashboard.md
+      - Event Store: user_guide/event_store.md
+      - SNMP: user_guide/SNMP.md
+      - Sentry: user_guide/sentry.md
+      - Резервное копирование: user_guide/backup.md
+      - Уведомления: user_guide/notification.md
+      - Вложенная виртуализация: user_guide/nested_virtualization.md
+
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -36,52 +81,3 @@ theme:
       toggle:
         icon: material/white-balance-sunny
         name: Переключить на светлую тему
-
-nav:
-  - Введение:
-    - Про Open vAIR: introduce/index.md
-    - Установка и удаление: introduce/install.md
-    - Патчирование/Обновление проекта: introduce/update.md
-
-  - Контрибьюторам:
-    - Общий подход: contributors/general.md
-    - Тестирование: contributors/tests.md
-  - Спецификация модулей:
-    - Введение: modules_specs/index.md
-    - volume:
-      - Описание модуля: modules_specs/volume/general_specification.md
-      - Тесты: modules_specs/volume/tests_specification.md
-  - Структура проекта:
-    - project_structure/general_terms.md
-    - Общая Структура Модуля:
-      - project_structure/general_module/introduction.md
-      - project_structure/general_module/adapters.md
-      - project_structure/general_module/domain.md
-      - project_structure/general_module/entrypoints.md
-      - project_structure/general_module/service_layer.md
-      - project_structure/general_module/module_dir.md
-  - Инструкция для пользователя:
-    - Введение: user_guide/introduction.md
-    - Хранилища: user_guide/storages.md
-    - Виртуальные диски: user_guide/volume.md
-    - Образы: user_guide/image.md
-    - Блочные устройства: user_guide/block_devices.md
-    - Network: user_guide/network.md
-    - Виртуальные сети: user_guide/virtual_networks.md
-    - Виртуальные машины: user_guide/virtual_machines.md
-    - Управление пользователями: user_guide/user.md
-    - Dashboard: user_guide/dashboard.md
-    - Event Store: user_guide/event_store.md
-    - SNMP: user_guide/SNMP.md
-    - Sentry: user_guide/sentry.md
-    - Резервное копирование: user_guide/backup.md
-    - Уведомления: user_guide/notification.md
-    - Вложенная виртуализация: user_guide/nested_virtualization.md
-
-#    - Начало Работы: contributors/begin.md
-#    - Внесение Изменений в Проект: contributors/changing.md
-#    - Отправка Изменений на Проверку: contributors/end.md
-
-#      - Введение: install/introduction.md
-#      - Системные требования: install/system_requirements.md
-
