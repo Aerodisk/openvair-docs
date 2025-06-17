@@ -63,13 +63,14 @@ nav:
     - Хранилища: user_guide/storages.md
     - Виртуальные диски: user_guide/volume.md
     - Образы: user_guide/image.md
+    - Блочные устройства: user_guide/block_devices.md
+
     - Network: user_guide/network.md
     - Виртуальные сети: user_guide/virtual_networks.md
     - Виртуальные машины: user_guide/virtual_machines.md
     - Управление пользователями: user_guide/user.md
 
     - Sentry: user_guide/sentry/index.md
-    - Блочные устройства: user_guide/block_devices/index.md
     - Event Store: event_store/index.md
     - Уведомления: notification/index.md
     - SNMP: user_guide/SNMP/index.md
