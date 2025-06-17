@@ -75,13 +75,13 @@ GET /dashboard/
 
 1. Для просмотра информации о системе перейдите во вкладку «Системная панель»
 
-![image](/assets/images/dashboard/0_dashboard.png)
+![image](/_assets/images/dashboard/0_dashboard.png)
 
 ## Настройка панели
 
 1. Для настройки панели нажми на кнопку «Настройка панели»:
-![image](/assets/images/dashboard/1_config_button.png)
+![image](/_assets/images/dashboard/1_config_button.png)
 
 2. В открывшемся меню можно настроить отображение виджетов, а так же выбрать
    нужные настройки сетки:
-![image](/assets/images/dashboard/2_config.png)
+![image](/_assets/images/dashboard/2_config.png)

@@ -84,7 +84,7 @@ get_bridges_list(self) -> list: Получает список подключен
 
 #### Диаграмма UML
 
-![image](/assets/images/network/ovs.png)
+![image](/_assets/images/network/ovs.png)
 
 
 # Netplan Interface
@@ -164,4 +164,4 @@ BaseInterface\` или BaseBridge на основе предоставленны
 
 ### Диаграмма UML
 
-![image](/assets/images/network/netplan.png)
+![image](/_assets/images/network/netplan.png)

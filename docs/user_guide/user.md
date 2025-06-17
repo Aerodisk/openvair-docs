@@ -124,9 +124,9 @@ curl -X POST -d '{"new_password": "new_password"}' http://example.com/user/1234/
 ### Логин в проект
 
 1. Для входа в проект необходимо ввести логин и пароль затем нажать на кнопку «Войти»:
-![image](/assets/images/user/1_login.png)
+![image](/_assets/images/user/1_login.png)
 
 ### Выход из учетной записи
 
 1. Для выхода из проекта необходимо нажать на стрелочку в верхнем правом углу и нажать «Выйти из аккаунта»
-![image](/assets/images/user/2_logout.png)
+![image](/_assets/images/user/2_logout.png)

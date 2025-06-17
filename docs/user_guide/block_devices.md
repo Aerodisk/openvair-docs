@@ -57,7 +57,7 @@ Area Network). Он обеспечивает высокую производит
 
    В левом боковом меню перейдите на страницу «Блочные устройства» и на открывшейся странице
    вы увидете доступный для копирования IQN текущего хоста
-    ![image](/assets/images/block_devices/ISCSI/login/1_get_iqn.png)
+    ![image](/_assets/images/block_devices/ISCSI/login/1_get_iqn.png)
 
    Полученный IQN необходимо передать в качестве target на вашем удаленном сервере.
 
@@ -83,26 +83,26 @@ Area Network). Он обеспечивает высокую производит
     Или через веб-интерфейс:
     
     Нажмите на кнопку «Логин»:
-    ![image](/assets/images/block_devices/ISCSI/login/2_login.png)
+    ![image](/_assets/images/block_devices/ISCSI/login/2_login.png)
     
     В поле «Тип» выберите «ISCSI»
     
     В поле «IP» укажите IP адрес удаленного сервера
     
     В поле «Порт» можно указать нужный порт (если оставить поле «Порт» пустым, то поставится порт по-умолчанию: 3260):
-    ![image](/assets/images/block_devices/ISCSI/login/3_login.png)
+    ![image](/_assets/images/block_devices/ISCSI/login/3_login.png)
     
     После чего в таблице отобразится созданная сессия:
-    ![image](/assets/images/block_devices/ISCSI/login/4_login.png)
+    ![image](/_assets/images/block_devices/ISCSI/login/4_login.png)
     
     Подключенное ISCSI устройство можно будет увидеть во вкладке «Физические диски»:
-    ![image](/assets/images/block_devices/ISCSI/login/5_phys_disks.png)
+    ![image](/_assets/images/block_devices/ISCSI/login/5_phys_disks.png)
     
     Для наглядности, вот как выглядела таблица физических дисков до того как мы подключили ISCSI устройство:
-    ![image](/assets/images/block_devices/ISCSI/login/0_phys_disks_before.png)
+    ![image](/_assets/images/block_devices/ISCSI/login/0_phys_disks_before.png)
     
     И вот как выглядит эта же таблица после подключения ISCSI устройства:
-    ![image](/assets/images/block_devices/ISCSI/login/6_phys_disks_after.png)
+    ![image](/_assets/images/block_devices/ISCSI/login/6_phys_disks_after.png)
     
     После успешного выполнения этих шагов ISCSI устройство будет успешно
     подключено к серверу и готово к использованию.
@@ -127,11 +127,11 @@ POST /block-devices/logout
 Или использоват веб-интерфейс:
 
 В таблице ISCSI сессий с правой стороны нажимаем на «три точки» в строке нужной нам сессии, появится всплывающая кнопка «Разлогинить», нажимаем на нее:
-![image](/assets/images/block_devices/ISCSI/logout/1_logout.png)
+![image](/_assets/images/block_devices/ISCSI/logout/1_logout.png)
 Появится модальное окно с просьбой подтвердить удаление выбранной сессии, нажимаем «Разлогинить»
-![image](/assets/images/block_devices/ISCSI/logout/2_logout.png)
+![image](/_assets/images/block_devices/ISCSI/logout/2_logout.png)
 После чего удаленная сессия пропадет из таблицы сессий:
-![image](/assets/images/block_devices/ISCSI/logout/3_logout.png)
+![image](/_assets/images/block_devices/ISCSI/logout/3_logout.png)
 
 Этот процесс позволяет корректно завершить сеанс работы с ISCSI устройством.
 
@@ -140,12 +140,12 @@ POST /block-devices/logout
 Для того чтобы увидеть в системе подключенные Fibre Channel устройства, необходимо произвести сканирование портов с использованием протокола LIP (Loop Initialization Protocol).
 Для этого перейдите на страницу «Блочные устройства» и нажмите на кнопку «Сканировать (LIP)».
 
-![image](/assets/images/block_devices/FC/0_scan.png)
+![image](/_assets/images/block_devices/FC/0_scan.png)
 
 Появится модальное окно с описанием того, что сейчас будет происходить LIP сканирование, где так же нажимаем кнопку «Сканировать»:
 
-![image](/assets/images/block_devices/FC/1_scan_modal.png)
+![image](/_assets/images/block_devices/FC/1_scan_modal.png)
 
 После чего на странице «Физические диски» отобразятся подключенные Fibre Channel устройства:
 
-![image](/assets/images/block_devices/FC/2_phys_disks.png)
+![image](/_assets/images/block_devices/FC/2_phys_disks.png)
