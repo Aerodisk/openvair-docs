@@ -4,6 +4,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
+plugins:
+  - glightbox
 nav:
   - Введение:
     - Про Open vAIR: introduce/index.md
