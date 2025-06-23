@@ -1,88 +1,88 @@
 site_name: Документация Open vAIR
 dev_addr: 192.168.122.50:8001
 
-nav:
-  - Введение:
-      - О проекте: introduce/index.md
-      - Установка: introduce/install.md
-      - Обновление: introduce/update.md
-  - Руководство пользователя:
-      - Введение: user_guide/introduction.md
-      - Дашборд: user_guide/dashboard.md
-      - Хранилища: user_guide/storages.md
-      - Виртуальные машины: user_guide/virtual_machines.md
-      - Виртуальные сети: user_guide/virtual_networks.md
-      - Образы: user_guide/image.md
-      - Volume: user_guide/volume.md
-      - Block devices: user_guide/block_devices.md
-      - Пользователи: user_guide/user.md
-      - Backup: user_guide/backup.md
-      - Event Store: user_guide/event_store.md
-      - SNMP: user_guide/SNMP.md
-      - Notification: user_guide/notification.md
-      - Sentry: user_guide/sentry.md
-      - Nested Virtualization: user_guide/nested_virtualization.md
-      # ...добавляй новые модули тут по мере роста
-  - How-To/Рецепты (по задачам):
-      - contributors/tests.md
-      # Если хочешь добавить task-based раздел — очень советую! Примеры:
-      # - Как добавить хранилище: user_guide/storages.md#add
-      # - Как восстановить backup: user_guide/backup.md#restore
-      # ...сюда можно свести часто встречающиеся задачи, выделить важные
-  - Справочник/Reference:
-      - Спецификации модулей: modules_specs/index.md
-      # Если в будущем будет api.md или иные reference-доки — добавляй сюда
-  - Для контрибьюторов:
-      - Общее: contributors/general.md
-      - Тесты: contributors/tests.md
-      # Можно добавить contributing.md, code_style.md и др.
-  - Архитектура и структура:
-      - Термины: project_structure/general_terms.md
-      # Если будет структура каталогов или архитектурная overview — добавляй
-
 #nav:
 #  - Введение:
-#      - Про Open vAIR: introduce/index.md
-#      - Установка и удаление: introduce/install.md
-#      - Патчирование/Обновление проекта: introduce/update.md
-#
-#  - Контрибьюторам:
-#      - Общий подход: contributors/general.md
-#      - Тестирование: contributors/tests.md
-#
-#  - Спецификация модулей:
-#      - Введение: modules_specs/index.md
-#      - volume:
-#          - Описание модуля: modules_specs/volume/general_specification.md
-#          - Тесты: modules_specs/volume/tests_specification.md
-#
-#  - Структура проекта:
-#      - project_structure/general_terms.md
-#      - Общая Структура Модуля:
-#          - project_structure/general_module/introduction.md
-#          - project_structure/general_module/adapters.md
-#          - project_structure/general_module/domain.md
-#          - project_structure/general_module/entrypoints.md
-#          - project_structure/general_module/service_layer.md
-#          - project_structure/general_module/module_dir.md
-#
-#  - Инструкция для пользователя:
+#      - О проекте: getting_started/index.md
+#      - Установка: getting_started/install.md
+#      - Обновление: getting_started/update.md
+#  - Руководство пользователя:
 #      - Введение: user_guide/introduction.md
+#      - Дашборд: user_guide/dashboard.md
 #      - Хранилища: user_guide/storages.md
-#      - Виртуальные диски: user_guide/volume.md
-#      - Образы: user_guide/image.md
-#      - Блочные устройства: user_guide/block_devices.md
-#      - Network: user_guide/network.md
-#      - Виртуальные сети: user_guide/virtual_networks.md
 #      - Виртуальные машины: user_guide/virtual_machines.md
-#      - Управление пользователями: user_guide/user.md
-#      - Dashboard: user_guide/dashboard.md
+#      - Виртуальные сети: user_guide/virtual_networks.md
+#      - Образы: user_guide/image.md
+#      - Volume: user_guide/volume.md
+#      - Block devices: user_guide/block_devices.md
+#      - Пользователи: user_guide/user.md
+#      - Backup: user_guide/backup.md
 #      - Event Store: user_guide/event_store.md
 #      - SNMP: user_guide/SNMP.md
+#      - Notification: user_guide/notification.md
 #      - Sentry: user_guide/sentry.md
-#      - Резервное копирование: user_guide/backup.md
-#      - Уведомления: user_guide/notification.md
-#      - Вложенная виртуализация: user_guide/nested_virtualization.md
+#      - Nested Virtualization: user_guide/nested_virtualization.md
+#      # ...добавляй новые модули тут по мере роста
+#  - How-To/Рецепты (по задачам):
+#      - contributors/tests.md
+#      # Если хочешь добавить task-based раздел — очень советую! Примеры:
+#      # - Как добавить хранилище: user_guide/storages.md#add
+#      # - Как восстановить backup: user_guide/backup.md#restore
+#      # ...сюда можно свести часто встречающиеся задачи, выделить важные
+#  - Справочник/Reference:
+#      - Спецификации модулей: modules_specs/index.md
+#      # Если в будущем будет api.md или иные reference-доки — добавляй сюда
+#  - Для контрибьюторов:
+#      - Общее: contributors/general.md
+#      - Тесты: contributors/tests.md
+#      # Можно добавить contributing.md, code_style.md и др.
+#  - Архитектура и структура:
+#      - Термины: project_structure/general_terms.md
+#      # Если будет структура каталогов или архитектурная overview — добавляй
+
+nav:
+  - Введение:
+      - Про Open vAIR: getting_started/index.md
+      - Установка и удаление: getting_started/install.md
+      - Патчирование/Обновление проекта: getting_started/update.md
+
+  - Контрибьюторам:
+      - Общий подход: contributors/general.md
+      - Тестирование: contributors/tests.md
+
+  - Спецификация модулей:
+      - Введение: modules_specs/index.md
+      - volume:
+          - Описание модуля: modules_specs/volume/general_specification.md
+          - Тесты: modules_specs/volume/tests_specification.md
+
+  - Структура проекта:
+      - project_structure/general_terms.md
+      - Общая Структура Модуля:
+          - project_structure/general_module/introduction.md
+          - project_structure/general_module/adapters.md
+          - project_structure/general_module/domain.md
+          - project_structure/general_module/entrypoints.md
+          - project_structure/general_module/service_layer.md
+          - project_structure/general_module/module_dir.md
+
+  - Инструкция для пользователя:
+      - Введение: user_guide/introduction.md
+      - Хранилища: user_guide/storages.md
+      - Виртуальные диски: user_guide/volume.md
+      - Образы: user_guide/image.md
+      - Блочные устройства: user_guide/block_devices.md
+      - Network: user_guide/network.md
+      - Виртуальные сети: user_guide/virtual_networks.md
+      - Виртуальные машины: user_guide/virtual_machines.md
+      - Управление пользователями: user_guide/user.md
+      - Dashboard: user_guide/dashboard.md
+      - Event Store: user_guide/event_store.md
+      - SNMP: user_guide/SNMP.md
+      - Sentry: user_guide/sentry.md
+      - Резервное копирование: user_guide/backup.md
+      - Уведомления: user_guide/notification.md
+      - Вложенная виртуализация: user_guide/nested_virtualization.md
 
 
 markdown_extensions:
