@@ -52,41 +52,32 @@ nav:
   - Руководство пользователя:
       - Обзор: user_guide/index.md
       - Виртуальные машины: user_guide/virtual_machines.md
-#          - Обзор: user_guide/virtual_machines.md/index.md
-#          - Создать: user_guide/virtual_machines/create.md
-#          - Редактировать: user_guide/virtual_machines/edit.md
-#          - Удалить: user_guide/virtual_machines/delete.md
-#          - Подключить диск: user_guide/virtual_machines/attach_disk.md
-#          - Миграция: user_guide/virtual_machines/migrate.md
-#          - FAQ: user_guide/virtual_machines/faq.md
-#          - Известные проблемы: user_guide/virtual_machines/known_issues.md
-      - Виртуальные тома: user_guide/volumes.md
-#          - Обзор: user_guide/volumes/index.md
-#          - Создать: user_guide/volumes/create.md
-#          - Расширить: user_guide/volumes/extend.md
-#          - Удалить: user_guide/volumes/delete.md
-#          - Монтировать: user_guide/volumes/mount.md
-#          - Отсоединить: user_guide/volumes/detach.md
-#          - FAQ: user_guide/volumes/faq.md
-#          - Известные проблемы: user_guide/volumes/known_issues.md
-      - Хранилища:
-          - Обзор: user_guide/storages.md
-      - Сеть:
-          - Обзор: user_guide/network.md
-          # ... и другие разделы сети
-      # ... остальные модули по аналогии
+      - Виртуальные тома: user_guide/volume.md
+      - Хранилища: user_guide/storages.md
+      - Сеть: user_guide/network.md
+      - SNMP: user_guide/SNMP.md
+      - Backup: user_guide/backup.md
+      - Block devices: user_guide/block_devices.md
+      - Dashboard: user_guide/dashboard.md
+      - Event Store: user_guide/event_store.md
+      - Образы: user_guide/image.md
+      - Nested Virtualization: user_guide/nested_virtualization.md
+      - Notification: user_guide/notification.md
+      - Sentry: user_guide/sentry.md
+      - Пользователи: user_guide/user.md
+      - Виртуальные сети: user_guide/virtual_networks.md
   - Справочник:
       - Обзор: reference/index.md
       - Модули:
           - Обзор: reference/modules/index.md
-          - Виртуальные машины: reference/modules/virtual_machines.md
-          - Виртуальные тома: reference/modules/volumes.md
-          # ... другие спецификации модулей
+          - Виртуальные тома: reference/modules/volume.md
+          - Шаблоны: reference/modules/templates.md
+          # Добавь остальные спецификации модулей
       - API: reference/api.md
   - Вклад и разработка:
-      - Обзор: contributing/index.md
-      - Основное: contributing/general.md
-      - Тесты: contributing/tests.md
+      - Обзор: contributors/index.md
+      - Основное: contributors/general.md
+      - Тесты: contributors/tests.md
   - Архитектура:
       - Обзор: architecture/index.md
       - Термины: architecture/general_terms.md

@@ -26,7 +26,7 @@ Open vAIR - это сообщество специалистов, работаю
 - [Введение и быстрый старт](getting_started/index.md)
 - [Руководство пользователя](user_guide/index.md)
 - [Технический справочник (Reference)](reference/index.md)
-- [Вклад и разработка (Contributing)](contributing/index.md)
+- [Вклад и разработка (Contributing)](contributors/index.md)
 - [Архитектура и структура проекта](architecture/index.md)
 
 ---
@@ -44,8 +44,7 @@ Open vAIR - это сообщество специалистов, работаю
 ## 👩‍💻 Как начать
 
 1. Ознакомьтесь с [введением и инструкцией по установке](getting_started/install.md)
-2. Создайте первую виртуальную машину: [пошаговое руководство](user_guide/virtual_machines/index.md)
-3. Если что-то не понятно — [Часто задаваемые вопросы](user_guide/virtual_machines/faq.md)
+2. Создайте первую виртуальную машину: [пошаговое руководство](user_guide/virtual_machines.md)
 
 ---
 
