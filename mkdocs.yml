@@ -30,7 +30,7 @@ dev_addr: 192.168.122.50:8001
 #      # - Как восстановить backup: user_guide/backup.md#restore
 #      # ...сюда можно свести часто встречающиеся задачи, выделить важные
 #  - Справочник/Reference:
-#      - Спецификации модулей: modules_specs/index.md
+#      - Спецификации модулей: reference/index.md
 #      # Если в будущем будет api.md или иные reference-доки — добавляй сюда
 #  - Для контрибьюторов:
 #      - Общее: contributors/general.md
@@ -51,10 +51,10 @@ nav:
       - Тестирование: contributors/tests.md
 
   - Спецификация модулей:
-      - Введение: modules_specs/index.md
+      - Введение: reference/index.md
       - volume:
-          - Описание модуля: modules_specs/volume/general_specification.md
-          - Тесты: modules_specs/volume/tests_specification.md
+          - Описание модуля: reference/volume/general_specification.md
+          - Тесты: reference/volume/tests_specification.md
 
   - Структура проекта:
       - architecture/general_terms.md
