@@ -37,7 +37,7 @@ dev_addr: 192.168.122.50:8001
 #      - Тесты: contributors/tests.md
 #      # Можно добавить contributing.md, code_style.md и др.
 #  - Архитектура и структура:
-#      - Термины: project_structure/general_terms.md
+#      - Термины: architecture/general_terms.md
 #      # Если будет структура каталогов или архитектурная overview — добавляй
 
 nav:
@@ -57,14 +57,14 @@ nav:
           - Тесты: modules_specs/volume/tests_specification.md
 
   - Структура проекта:
-      - project_structure/general_terms.md
+      - architecture/general_terms.md
       - Общая Структура Модуля:
-          - project_structure/general_module/introduction.md
-          - project_structure/general_module/adapters.md
-          - project_structure/general_module/domain.md
-          - project_structure/general_module/entrypoints.md
-          - project_structure/general_module/service_layer.md
-          - project_structure/general_module/module_dir.md
+          - architecture/general_module/introduction.md
+          - architecture/general_module/adapters.md
+          - architecture/general_module/domain.md
+          - architecture/general_module/entrypoints.md
+          - architecture/general_module/service_layer.md
+          - architecture/general_module/module_dir.md
 
   - Инструкция для пользователя:
       - Введение: user_guide/introduction.md
