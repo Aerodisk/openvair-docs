@@ -11,3 +11,4 @@
    entrypoints
    service_layer
    module_dir
+   dto.md
