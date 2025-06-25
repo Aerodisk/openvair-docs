@@ -48,7 +48,10 @@ dev_addr: 192.168.122.50:8001
 #      - Вложенная виртуализация: user_guide/nested_virtualization.md
 
 nav:
-  - Введение: getting_started/index.md
+  - Введение:
+    - getting_started/index.md
+    - getting_started/install.md
+    - getting_started/update.md
   - Руководство пользователя:
       - Обзор: user_guide/index.md
       - Виртуальные машины: user_guide/virtual_machines.md
