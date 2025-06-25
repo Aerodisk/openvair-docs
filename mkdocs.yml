@@ -16,7 +16,7 @@ dev_addr: 192.168.122.50:8001
 #  - Спецификация модулей:
 #      - Введение: reference/index.md
 #      - volume:
-#          - Описание модуля: reference/volume/general_specification.md
+#          - Описание модуля: reference/volume/specification.md
 #          - Тесты: reference/volume/tests_specification.md
 #
 #  - Структура проекта:
@@ -74,7 +74,11 @@ nav:
       - Модули:
           - Обзор: reference/modules/index.md
           - Виртуальные тома: reference/modules/volume.md
-          - Шаблоны: reference/modules/templates.md
+          - Шаблоны:
+              Обзор: reference/modules/template/index.md
+              Технические требования: reference/modules/template/tech_requirements.md
+              Документация: reference/modules/template/specification.md
+              Документация тестов: reference/modules/template/tests_specification.md
           # Добавь остальные спецификации модулей
       - API: reference/api.md
   - Вклад и разработка:
