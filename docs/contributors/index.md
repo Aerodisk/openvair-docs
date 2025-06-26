@@ -4,4 +4,4 @@
 
 - [Общие рекомендации](general.md)
 - [Тесты](tests.md)
-- [FAQ по структуре документации](docs_structure_faq.md)
+- [FAQ по структуре документации](docs/structure_faq.md)
