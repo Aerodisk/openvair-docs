@@ -73,12 +73,16 @@ nav:
       - Обзор: reference/index.md
       - Модули:
           - Обзор: reference/modules/index.md
-          - Виртуальные тома: reference/modules/volume.md
+          - Виртуальные тома:
+              - Обзор: reference/modules/volume/index.md
+              - Технические требования: reference/modules/volume/tech_requirements.md
+              - Документация: reference/modules/volume/specification.md
+              - Документация тестов: reference/modules/volume/tests_specification.md
           - Шаблоны:
-              Обзор: reference/modules/template/index.md
-              Технические требования: reference/modules/template/tech_requirements.md
-              Документация: reference/modules/template/specification.md
-              Документация тестов: reference/modules/template/tests_specification.md
+              - Обзор: reference/modules/template/index.md
+              - Технические требования: reference/modules/template/tech_requirements.md
+              - Документация: reference/modules/template/specification.md
+              - Документация тестов: reference/modules/template/tests_specification.md
           # Добавь остальные спецификации модулей
       - API: reference/api.md
   - Вклад и разработка:
@@ -89,10 +93,11 @@ nav:
       - Обзор: architecture/index.md
       - Термины: architecture/general_terms.md
       - General Module:
+          - Обзор: architecture/general_module/index.md
+          - Введение: architecture/general_module/introduction.md
           - Adapters: architecture/general_module/adapters.md
           - Domain: architecture/general_module/domain.md
           - Entrypoints: architecture/general_module/entrypoints.md
-          - Введение: architecture/general_module/introduction.md
           - module_dir: architecture/general_module/module_dir.md
           - service_layer: architecture/general_module/service_layer.md
 
