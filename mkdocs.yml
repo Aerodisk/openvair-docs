@@ -89,6 +89,7 @@ nav:
       - Обзор: contributors/index.md
       - Основное: contributors/general.md
       - Тесты: contributors/tests.md
+      - FAQ по структуре документации: contributors/docs_structure_faq.md
   - Архитектура:
       - Обзор: architecture/index.md
       - Термины: architecture/general_terms.md
