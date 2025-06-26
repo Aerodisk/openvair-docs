@@ -52,6 +52,7 @@ nav:
     - getting_started/index.md
     - getting_started/install.md
     - getting_started/update.md
+    - getting_started/system_requirements.md
   - Руководство пользователя:
       - Обзор: user_guide/index.md
       - Виртуальные машины: user_guide/virtual_machines.md
@@ -78,6 +79,7 @@ nav:
               - Технические требования: reference/modules/volume/tech_requirements.md
               - Документация: reference/modules/volume/specification.md
               - Документация тестов: reference/modules/volume/tests_specification.md
+              - FAQ: reference/modules/volume/faq.md
           - Шаблоны:
               - Обзор: reference/modules/template/index.md
               - Технические требования: reference/modules/template/tech_requirements.md
