@@ -1,58 +1,61 @@
 site_name: Документация Open vAIR
 dev_addr: 192.168.122.50:8001
+repo_url: https://github.com/Aerodisk/openvair
+repo_name: Open vAIR на GitHub
 
-#
-#
-#nav:
-#  - Введение:
-#      - Про Open vAIR: getting_started/index.md
-#      - Установка и удаление: getting_started/install.md
-#      - Патчирование/Обновление проекта: getting_started/update.md
-#
-#  - Контрибьюторам:
-#      - Общий подход: contributors/general.md
-#      - Тестирование: contributors/tests.md
-#
-#  - Спецификация модулей:
-#      - Введение: reference/index.md
-#      - volume:
-#          - Описание модуля: reference/volume/specification.md
-#          - Тесты: reference/volume/tests_specification.md
-#
-#  - Структура проекта:
-#      - architecture/general_terms.md
-#      - Общая Структура Модуля:
-#          - architecture/general_module/introduction.md
-#          - architecture/general_module/adapters.md
-#          - architecture/general_module/domain.md
-#          - architecture/general_module/entrypoints.md
-#          - architecture/general_module/service_layer.md
-#          - architecture/general_module/module_dir.md
-#
-#  - Инструкция для пользователя:
-#      - Введение: user_guide/introduction.md
-#      - Хранилища: user_guide/storages.md
-#      - Виртуальные диски: user_guide/volume.md
-#      - Образы: user_guide/image.md
-#      - Блочные устройства: user_guide/block_devices.md
-#      - Network: user_guide/network.md
-#      - Виртуальные сети: user_guide/virtual_networks.md
-#      - Виртуальные машины: user_guide/virtual_machines.md
-#      - Управление пользователями: user_guide/user.md
-#      - Dashboard: user_guide/dashboard.md
-#      - Event Store: user_guide/event_store.md
-#      - SNMP: user_guide/SNMP.md
-#      - Sentry: user_guide/sentry.md
-#      - Резервное копирование: user_guide/backup.md
-#      - Уведомления: user_guide/notification.md
-#      - Вложенная виртуализация: user_guide/nested_virtualization.md
+plugins:
+  - glightbox
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+theme:
+  name: material
+  logo: _assets/logo.png
+  features:
+    - header.autohide
+    - navigation.tabs
+    - navigation.instant
+    - navigation.instant.progress
+  palette:
+    - scheme: default
+      primary: "#1F4E79"
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Тёмная тема
+    - scheme: slate
+      primary: "#1F4E79"
+      accent: white
+      toggle:
+        icon: material/white-balance-sunny
+        name: Светлая тема
+      font:
+        text: Roboto
+        code: Fira Mono
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Aerodisk/openvair
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/Open_vAIR_AERODISK
+
+      
 nav:
   - Введение:
-    - getting_started/index.md
-    - getting_started/install.md
-    - getting_started/update.md
-    - getting_started/system_requirements.md
+      - getting_started/index.md
+      - getting_started/install.md
+      - getting_started/update.md
+      - getting_started/system_requirements.md
   - Руководство пользователя:
       - Обзор: user_guide/index.md
       - Виртуальные машины: user_guide/virtual_machines.md
@@ -92,9 +95,9 @@ nav:
       - Основное: contributors/general.md
       - Тесты: contributors/tests.md
       - Документация:
-        - Обзор: contributors/docs/index.md
-        - FAQ по структуре документации: contributors/docs/structure_faq.md
-        - Как оформлять документацию для существующего модуля: contributors/docs/howto.md
+          - Обзор: contributors/docs/index.md
+          - FAQ по структуре документации: contributors/docs/structure_faq.md
+          - Как оформлять документацию для существующего модуля: contributors/docs/howto.md
   - Архитектура:
       - Обзор: architecture/index.md
       - Термины: architecture/general_terms.md
@@ -106,40 +109,3 @@ nav:
           - Entrypoints: architecture/general_module/entrypoints.md
           - module_dir: architecture/general_module/module_dir.md
           - service_layer: architecture/general_module/service_layer.md
-
-markdown_extensions:
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - attr_list
-  - md_in_html
-  - pymdownx.blocks.caption
-
-plugins:
-  - glightbox
-
-theme:
-  name: material
-  logo: _assets/logo.png
-  features:
-    - header.autohide
-    - navigation.tabs
-    - navigation.instant
-    - navigation.instant.progress
-  palette:
-    - scheme: default
-      primary: "#1F4E79"
-      accent: orange
-      toggle:
-        icon: material/weather-night
-        name: Тёмная тема
-    - scheme: slate
-      primary: "#1F4E79"
-      accent: white
-      toggle:
-        icon: material/white-balance-sunny
-        name: Светлая тема

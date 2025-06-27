@@ -30,5 +30,5 @@
 
 - [Спецификация](specification.md)
 - [Документация тестов](tests_specification.md)
-- [User guide](../../user_guide/volume.md)
-- [Структура БД и ORM](schema.md)
+- [FAQ](faq.md)
+- [User guide](/user_guide/volume.md)

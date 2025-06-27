@@ -29,5 +29,4 @@
 
 - [Спецификация](specification.md)
 - [Документация тестов](tests_specification.md)
-- [User guide](../../user_guide/template.md)
-- [Структура БД и ORM](schema.md)
+- [FAQ](faq.md)
