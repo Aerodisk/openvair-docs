@@ -94,7 +94,7 @@ nav:
       - Документация:
         - Обзор: contributors/docs/index.md
         - FAQ по структуре документации: contributors/docs/structure_faq.md
-        - Как оформлять документацию для существующего или нового модуля: contributors/docs/howto.md
+        - Как оформлять документацию для существующего модуля: contributors/docs/howto.md
   - Архитектура:
       - Обзор: architecture/index.md
       - Термины: architecture/general_terms.md
