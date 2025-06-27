@@ -5,6 +5,7 @@ repo_name: Open vAIR на GitHub
 
 plugins:
   - glightbox
+  - search
 
 markdown_extensions:
   - pymdownx.highlight:
