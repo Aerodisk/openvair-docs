@@ -131,14 +131,14 @@ theme:
     - navigation.instant.progress
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: "#1F4E79"
+      accent: orange
       toggle:
         icon: material/weather-night
-        name: Переключить на тёмную тему
+        name: Тёмная тема
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: "#1F4E79"
+      accent: white
       toggle:
         icon: material/white-balance-sunny
-        name: Переключить на светлую тему
+        name: Светлая тема
