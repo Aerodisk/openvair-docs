@@ -85,7 +85,7 @@ nav:
               - Технические требования: reference/modules/template/tech_requirements.md
               - Документация: reference/modules/template/specification.md
               - Документация тестов: reference/modules/template/tests_specification.md
-          # Добавь остальные спецификации модулей
+              - FAQ: reference/modules/template/faq.md
       - API: reference/api.md
   - Вклад и разработка:
       - Обзор: contributors/index.md
@@ -124,6 +124,7 @@ plugins:
 
 theme:
   name: material
+  logo: _assets/logo.png
   features:
     - header.autohide
     - navigation.tabs
