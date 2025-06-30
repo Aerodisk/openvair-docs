@@ -1,5 +1,6 @@
 site_name: Документация Open vAIR
-dev_addr: 192.168.122.50:8001
+dev_addr:
+
 repo_url: https://github.com/Aerodisk/openvair
 repo_name: Open vAIR на GitHub
 
