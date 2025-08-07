@@ -4,3 +4,4 @@
 
 - [Виртуальные тома](volume/index.md)
 - [Шаблоны](template/index.md)
+- [Уведомления](notification/index.md)

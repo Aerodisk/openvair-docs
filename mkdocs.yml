@@ -91,6 +91,9 @@ nav:
               - Документация: reference/modules/template/specification.md
               - Документация тестов: reference/modules/template/tests_specification.md
               - FAQ: reference/modules/template/faq.md
+          - Уведомления:
+              - Обзор: reference/modules/notification/index.md
+              - Документация тестов: reference/modules/notification/tests_specification.md
       - API: reference/api.md
   - Вклад и разработка:
       - Обзор: contributors/index.md
