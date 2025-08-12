@@ -18,3 +18,4 @@
 - [Sentry](sentry.md)
 - [Пользователи](user.md)
 - [Виртуальные сети](virtual_networks.md)
+- [Снапшоты](snapshots.md)
