@@ -41,7 +41,7 @@ print_with_padding(){
 
 prepare_venv(){
     local create_docs_venv_command="uv --directory $DOCS_PROJECT_PATH venv -c"
-    local install_requirements_command="uv --directory $DOCS_PROJECT_PATH pip install -r pyproject.toml"
+    local install_requirements_command="uv sync --directory $DOCS_PROJECT_PATH"
 
     printf ">>>>>>Creating docs venv"
     $create_docs_venv_command
