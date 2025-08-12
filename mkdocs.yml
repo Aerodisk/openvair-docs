@@ -92,6 +92,9 @@ nav:
               - Документация: reference/modules/template/specification.md
               - Документация тестов: reference/modules/template/tests_specification.md
               - FAQ: reference/modules/template/faq.md
+          - Уведомления:
+              - Обзор: reference/modules/notification/index.md
+              - Документация тестов: reference/modules/notification/tests_specification.md
           - Снапшоты:
               - Обзор: reference/modules/snapshots/index.md
               - Технические требования: reference/modules/snapshots/tech_requirements.md
