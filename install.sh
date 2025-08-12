@@ -41,7 +41,7 @@ print_with_padding(){
 build_docs(){
   message="FAILURE IN BUILDING DOCS"
   printf ">>>>>> ${CYAN}BUILDING DOCS${NC}\n"
-  .venv/bin/python -m mkdocs build -d $DOCS_PATH || { show_allert_message $message; return; }
+  .venv/bin/python -m mkdocs build -d $DOCS_PATH || { echo "Error while build DOCS"; return; }
   printf ">>>>>> ${GREEN}SUCCESSFULLY BUILD DOCS${NC}\n"
   sudo systemctl restart web-app.service
 }
