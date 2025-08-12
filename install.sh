@@ -40,7 +40,7 @@ print_with_padding(){
 }
 
 prepare_venv(){
-    local create_docs_venv_command="uv --directory $DOCS_PROJECT_PATH venv"
+    local create_docs_venv_command="uv --directory $DOCS_PROJECT_PATH venv -c"
     local install_requirements_command="uv --directory $DOCS_PROJECT_PATH pip install -r pyproject.toml"
 
     printf ">>>>>>Creating docs venv"
@@ -54,9 +54,8 @@ prepare_venv(){
 build_docs(){
   message="FAILURE IN BUILDING DOCS"
   printf ">>>>>> ${CYAN}BUILDING DOCS${NC}\n"
-  $DOCS_PROJECT_PATH/.venv/bin/python -m mkdocs build -d $DOCS_PATH || { echo "Error while build DOCS"; return; }
+  $DOCS_PROJECT_PATH/.venv/bin/python -m mkdocs build -f "$DOCS_PROJECT_PATH/mkdocs.yml" -d $DOCS_PATH || { echo "Error while build DOCS"; return; }
   printf ">>>>>> ${GREEN}SUCCESSFULLY BUILD DOCS${NC}\n"
-  sudo systemctl restart web-app.service
 }
 
 print_final_message(){
