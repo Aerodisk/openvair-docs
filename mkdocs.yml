@@ -75,6 +75,7 @@ nav:
       - Sentry: user_guide/sentry.md
       - Пользователи: user_guide/user.md
       - Виртуальные сети: user_guide/virtual_networks.md
+      - Снапшоты: user_guide/snapshots.md
   - Справочник:
       - Обзор: reference/index.md
       - Модули:
@@ -94,6 +95,14 @@ nav:
           - Резервное копирование:
               - Обзор: reference/modules/backup/index.md
               - Документация тестов: reference/modules/backup/tests_specification.md
+          - Уведомления:
+              - Обзор: reference/modules/notification/index.md
+              - Документация тестов: reference/modules/notification/tests_specification.md
+          - Снапшоты:
+              - Обзор: reference/modules/snapshots/index.md
+              - Технические требования: reference/modules/snapshots/tech_requirements.md
+              - Документация: reference/modules/snapshots/specification.md
+              - FAQ: reference/modules/snapshots/faq.md
       - API: reference/api.md
   - Вклад и разработка:
       - Обзор: contributors/index.md
