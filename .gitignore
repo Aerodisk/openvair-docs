@@ -1,8 +1,1 @@
-venv/
-**/__pypackages__/
-**/__pycache__
-__pycache__/
-*.py[cod]
-*$py.class
-.vscode/
-build/
+*
