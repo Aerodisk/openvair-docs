@@ -5,10 +5,10 @@ USER=aero
 
 # Project settings
 PROJECT_NAME=openvair
-DOCS_PROJECT_NAME=openvair=docs
+DOCS_PROJECT_NAME=openvair-docs
 USER_PATH=/opt/$USER
 PROJECT_PATH="${USER_PATH}/${PROJECT_NAME}"
-DOC_PROJECT_PATH="${USER_PATH}/${DOCS_PROJECT_NAME}"
+DOCS_PROJECT_PATH="${USER_PATH}/${DOCS_PROJECT_NAME}"
 DOCS_PATH="${PROJECT_PATH}/docs"
 IP=$(cat $PROJECT_PATH/project_config.toml | grep -A 2 web_app | grep host)
 PORT=$(cat $PROJECT_PATH/project_config.toml | grep -A 2 web_app | grep port)
@@ -40,17 +40,21 @@ print_with_padding(){
 }
 
 prepare_venv(){
-    local create_docs_venv_command="uv --directory $DOC_PROJECT_PATH venv"
-    local install_requirements_command="uv --directory $DOC_PROJECT_PATH pip install -r pyproject.toml"
-    execute "$create_docs_venv" "Creating docs venv"
-    execute "$install_requirements_command" "install requirements for docs"
+    local create_docs_venv_command="uv --directory $DOCS_PROJECT_PATH venv"
+    local install_requirements_command="uv --directory $DOCS_PROJECT_PATH pip install -r pyproject.toml"
+
+    printf ">>>>>>Creating docs venv"
+    $create_docs_venv_command
+
+    printf ">>>>>>"install requirements for docs""
+    $install_requirements_command
 }
 
 # ========= BUILD DOCS ===========
 build_docs(){
   message="FAILURE IN BUILDING DOCS"
   printf ">>>>>> ${CYAN}BUILDING DOCS${NC}\n"
-  $USER_PATH/openvair-docs/.venv/bin/python -m mkdocs build -d $DOCS_PATH || { echo "Error while build DOCS"; return; }
+  $DOCS_PROJECT_PATH/.venv/bin/python -m mkdocs build -d $DOCS_PATH || { echo "Error while build DOCS"; return; }
   printf ">>>>>> ${GREEN}SUCCESSFULLY BUILD DOCS${NC}\n"
   sudo systemctl restart web-app.service
 }
