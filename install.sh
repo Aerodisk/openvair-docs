@@ -46,7 +46,7 @@ prepare_venv(){
     printf ">>>>>>Creating docs venv"
     $create_docs_venv_command
 
-    printf ">>>>>>"install requirements for docs""
+    printf ">>>>>>install requirements for docs"
     $install_requirements_command
 }
 
