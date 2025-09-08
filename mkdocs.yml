@@ -103,6 +103,9 @@ nav:
               - Технические требования: reference/modules/snapshots/tech_requirements.md
               - Документация: reference/modules/snapshots/specification.md
               - FAQ: reference/modules/snapshots/faq.md
+          - События:
+              - Обзор: reference/modules/event_store/index.md
+              - Документация тестов: reference/modules/event_store/tests_specification.md
       - API: reference/api.md
   - Вклад и разработка:
       - Обзор: contributors/index.md
