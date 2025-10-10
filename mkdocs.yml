@@ -80,6 +80,9 @@ nav:
       - Обзор: reference/index.md
       - Модули:
           - Обзор: reference/modules/index.md
+          - Виртуальные машины:
+              - Обзор: reference/modules/virtual_machines/index.md
+              - Документация тестов: reference/modules/virtual_machines/tests_specification.md
           - Виртуальные тома:
               - Обзор: reference/modules/volume/index.md
               - Технические требования: reference/modules/volume/tech_requirements.md
