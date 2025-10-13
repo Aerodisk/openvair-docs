@@ -6,4 +6,5 @@
 - [Шаблоны](template/index.md)
 - [Резервное копирование](backup/index.md)
 - [Уведомления](notification/index.md)
+- [Хранилища](storage/index.md)
 - [Снапшоты](snapshots/index.md)
