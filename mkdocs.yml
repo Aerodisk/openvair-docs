@@ -107,6 +107,7 @@ nav:
   - Вклад и разработка:
       - Обзор: contributors/index.md
       - Основное: contributors/general.md
+      - Управление версиями python и зависимостями: contributors/uv_guide.md
       - Тесты: contributors/tests.md
       - Документация:
           - Обзор: contributors/docs/index.md
