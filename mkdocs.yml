@@ -92,6 +92,9 @@ nav:
               - Документация: reference/modules/template/specification.md
               - Документация тестов: reference/modules/template/tests_specification.md
               - FAQ: reference/modules/template/faq.md
+          - Сетевые интерфейсы:
+              - Обзор: reference/modules/network/index.md
+              - Документация тестов: reference/modules/network/tests_specification.md
           - Резервное копирование:
               - Обзор: reference/modules/backup/index.md
               - Документация тестов: reference/modules/backup/tests_specification.md
